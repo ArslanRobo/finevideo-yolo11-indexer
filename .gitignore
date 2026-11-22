@@ -1,0 +1,23 @@
+# model weights: downloaded by prepare.py
+*.pt
+*.engine
+*.onnx
+
+# large working files (the submitted results are results.jsonl.gz)
+results.jsonl
+eval/*.jsonl
+eval/*.log
+!eval/*.jsonl.gz
+
+# the brief itself
+*.pdf
+
+__pycache__/
+*.pyc
+
+# local run outputs
+runs/
+eval/*.out
+
+# local only: contains the passwords it redacts
+tools/redact_chats.py
